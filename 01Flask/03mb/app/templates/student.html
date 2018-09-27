@@ -1,0 +1,24 @@
+<html>
+<head>
+
+</head>
+<body>
+<table border="1">
+	<th>
+		<td>名字</td>
+	</th>
+	{% for s in slist %}
+	<tr>
+		<td>{{slist.index(s) + 1}}</td>
+		<td>{{s}}
+	</tr>
+	{% endfor %}
+</table>
+
+
+	{{slist}}<br>
+	{% for s in slist %}
+		{{s}}<br>
+	{% endfor %}
+</body>
+</html>

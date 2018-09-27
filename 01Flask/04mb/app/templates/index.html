@@ -1,0 +1,15 @@
+<!--继承模板:继承了块之外的内容
+             继承了块 块中的内容可改
+-->
+{% extends 'base.html'%}
+{% block content %}
+{{super()}}<br>
+我终于会用块了
+{% endblock %}
+
+{% block page %}
+{{super()}}<br>
+我还行
+{% endblock%}
+<!--块之外的内容一律无效-->
+我的心血来潮     
